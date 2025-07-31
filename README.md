@@ -61,6 +61,18 @@ The server will start on `http://localhost:3000` by default.
   { "result": 3 }
   ```
 
+#### Add Operation (New Controller)
+- **Endpoint:** `GET /calc/add?a=5&b=7`
+- **Description:** Adds two numbers using the new AddController.
+- **Sample Request:**
+  ```
+  GET http://localhost:3000/calc/add?a=5&b=7
+  ```
+- **Sample Response:**
+  ```json
+  { "result": 12 }
+  ```
+
 ### Configuration
 - The SOAP client is configured in `app.module.ts`:
   ```typescript
