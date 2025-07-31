@@ -7,7 +7,7 @@ export class AddService implements OnModuleInit {
 
   async onModuleInit() {
     // Create and cache the SOAP client when module initializes
-    this.soapClient = await soap.createClientAsync('http://MALFK0700000508:8088/mockCalculatorSoap?wsdl');
+    this.soapClient = await soap.createClientAsync('http://dneonline.com/calculator.asmx?wsdl');
     // If you need authentication or special headers, configure them here.
     // Example:
     // this.soapClient.setSecurity(new soap.BasicAuthSecurity('username', 'password'));
